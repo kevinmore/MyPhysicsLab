@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="456 160 208 250" align="HStretch Top" layer="Overlapped" name="_Main">
+        <Widget type="Button" skin="CheckBox" position="8 8 192 24" align="HStretch Top" name="check_Horizontal">
+            <Property key="Caption" value="Show Horizontal Data"/>
+            <Property key="StateSelected" value="true"/>
+        </Widget>
+        <Widget type="Button" skin="CheckBox" position="8 40 192 24" align="HStretch Top" name="check_Vertical">
+            <Property key="Caption" value="Show Vertical Data"/>
+            <Property key="StateSelected" value="true"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="8 70 192 24" name="Max_H"/>
+        <Widget type="TextBox" skin="TextBox" position="8 95 192 24" name="Min_H"/>
+        <Widget type="TextBox" skin="TextBox" position="8 120 192 24" name="Mean_H"/>
+        <Widget type="TextBox" skin="TextBox" position="8 145 192 24" name="Max_V"/>
+        <Widget type="TextBox" skin="TextBox" position="8 170 192 24" name="Min_V"/>
+        <Widget type="TextBox" skin="TextBox" position="8 195 192 24" name="Mean_V"/>
+        <Widget type="TextBox" skin="TextBox" position="8 220 192 24" name="Data_Total"/>
+    </Widget>
+</MyGUI>

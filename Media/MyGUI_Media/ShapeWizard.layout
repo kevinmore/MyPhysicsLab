@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="10 10 200 560" align="Left Top" layer="Overlapped" name="Shape_Wizard">
+        <Property key="Caption" value="Shape Wizard"/>
+        <Property key="MinSize" value="195 555"/>
+        <Widget type="ComboBox" skin="ComboBox" position="2 5 185 30" align="HCenter Top" name="Shape_Selector">
+            <Property key="Caption" value=" Select a shape first..."/>
+            <Property key="AddItem" value="Sphere"/>
+            <Property key="AddItem" value="Cube"/>
+            <Property key="Static" value="true"/>
+            <Property key="ModeDrop" value="true"/>
+            <Property key="TextAlign" value="Left VCenter"/>
+        </Widget>
+        <Widget type="ComboBox" skin="ComboBox" position="2 40 185 30" align="HCenter Top" name="Motion_Selector">
+            <Property key="Caption" value="Select a MotionType..."/>
+            <Property key="Static" value="true"/>
+            <Property key="ModeDrop" value="true"/>
+            <Property key="AddItem" value="DYNAMIC"/>
+            <Property key="AddItem" value="SPHERE_INERTIA"/>
+            <Property key="AddItem" value="BOX_INERTIA"/>
+            <Property key="AddItem" value="THIN_BOX_INERTIA"/>
+            <Property key="AddItem" value="KEYFRAMED"/>
+            <Property key="AddItem" value="FIXED"/>
+            <Property key="TextAlign" value="Left VCenter"/>
+            <Property key="Enabled" value="false"/>
+        </Widget>
+        <Widget type="TabControl" skin="TabControl" position="0 75 190 410" align="Stretch" name="Shape_Tab_Control">
+            <Property key="Enabled" value="false"/>
+            <Widget type="TabItem" skin="" position="2 24 184 382">
+                <Property key="Caption" value="Physical"/>
+                <Widget type="Widget" skin="PanelEmpty" position="0 5 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Mass:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="60 5 115 30" name="Shape_Mass">
+                        <Property key="Enabled" value="true"/>
+                        <Property key="Caption" value="1.0"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 45 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Width:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="60 5 115 30" name="Shape_Length">
+                        <Property key="Enabled" value="true"/>
+                        <Property key="Caption" value="1.0"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 85 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Height:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="60 5 115 30" name="Shape_Height">
+                        <Property key="Enabled" value="true"/>
+                        <Property key="Caption" value="1.0"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 125 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Depth:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="60 5 115 30" name="Shape_Width">
+                        <Property key="Enabled" value="true"/>
+                        <Property key="Caption" value="1.0"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 165 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Radius:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="60 5 115 30" name="Shape_Radius">
+                        <Property key="Enabled" value="true"/>
+                        <Property key="Caption" value="1.0"/>
+                    </Widget>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="5 205 170 30">
+                    <Property key="Caption" value="Friction Factor:"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="5 230 170 30" name="Shape_Friction">
+                    <Property key="Enabled" value="true"/>
+                    <Property key="Caption" value="0.5"/>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="5 290 170 30" name="Shape_Gravity">
+                    <Property key="Enabled" value="true"/>
+                    <Property key="Caption" value="1.0"/>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="5 350 170 30" name="Shape_Rest">
+                    <Property key="Enabled" value="true"/>
+                    <Property key="Caption" value="0.0"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="5 260 170 30">
+                    <Property key="Caption" value="Gravity Factor:"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="5 320 170 30">
+                    <Property key="Caption" value="Energy Restitution(0~1):"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+            </Widget>
+            <Widget type="TabItem" skin="" position="2 24 184 382">
+                <Property key="Caption" value="Spatial"/>
+                <Widget type="Widget" skin="PanelEmpty" position="0 25 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Position:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="65 5 30 30" name="p_x">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="105 5 30 30" name="p_y">
+                        <Property key="Caption" value="1.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="145 5 30 30" name="p_z">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 65 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Force:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="65 5 30 30" name="f_x">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="105 5 30 30" name="f_y">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="145 5 30 30" name="f_z">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 105 180 40">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 60 40">
+                        <Property key="Caption" value="Torque:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="65 5 30 30" name="t_x">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="105 5 30 30" name="t_y">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="145 5 30 30" name="t_z">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="65 0 30 30">
+                    <Property key="Caption" value="X"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="105 0 30 30">
+                    <Property key="Caption" value="Y"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="145 0 30 30">
+                    <Property key="Caption" value="Z"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 150 180 50">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 180 20">
+                        <Property key="Caption" value="Linear Velocity:"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="65 20 30 30" name="lv_x">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="105 20 30 30" name="lv_y">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="145 20 30 30" name="lv_z">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="0 25 60 20">
+                        <Property key="Caption" value="X, Y, Z:"/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 205 180 50">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 180 20">
+                        <Property key="Caption" value="Angular Velocity:"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="65 20 30 30" name="av_x">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="105 20 30 30" name="av_y">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="145 20 30 30" name="av_z">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="0 25 60 20">
+                        <Property key="Caption" value="X, Y, Z:"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 260 180 50">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 180 20">
+                        <Property key="Caption" value="Linear Impulse:"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="65 20 30 30" name="li_x">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="105 20 30 30" name="li_y">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="145 20 30 30" name="li_z">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="0 25 60 20">
+                        <Property key="Caption" value="X, Y, Z:"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="0 315 180 50">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 180 20">
+                        <Property key="Caption" value="Angular Impulse:"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="65 20 30 30" name="ai_x">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="105 20 30 30" name="ai_y">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="145 20 30 30" name="ai_z">
+                        <Property key="Caption" value="0.0"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="0 25 60 20">
+                        <Property key="Caption" value="X, Y, Z:"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                </Widget>
+            </Widget>
+            <Widget type="TabItem" skin="" position="2 24 184 382">
+                <Property key="Caption" value="Render"/>
+                <Widget type="ComboBox" skin="ComboBox" position="5 35 170 30" name="PolygonMode_Selector">
+                    <Property key="Caption" value="Solid"/>
+                    <Property key="Static" value="true"/>
+                    <Property key="ModeDrop" value="true"/>
+                    <Property key="AddItem" value="Solid"/>
+                    <Property key="AddItem" value="Wireframe"/>
+                    <Property key="AddItem" value="Points"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="5 10 170 20">
+                    <Property key="Caption" value="Polygon Mode: "/>
+                    <Property key="TextAlign" value="Left VCenter"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="5 80 170 20">
+                    <Property key="Caption" value="Shape Color:"/>
+                    <Property key="TextAlign" value="Left VCenter"/>
+                </Widget>
+                <Widget type="Button" skin="Button" position="5 105 170 80" name="Shape_Color">
+                    <Property key="TextAlign" value="Center"/>
+                    <Property key="Caption" value="Colour Picker"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="Button" skin="Button" position="35 490 120 30" align="HCenter Bottom" name="Shape_OK">
+            <Property key="Caption" value="OK"/>
+            <Property key="Pointer" value="hand"/>
+            <Property key="Enabled" value="false"/>
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings/>
+</MyGUI>

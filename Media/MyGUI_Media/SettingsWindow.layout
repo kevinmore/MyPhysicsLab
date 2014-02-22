@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCX" position="458 239 450 290" align="Center" layer="Overlapped" name="Setting_Window">
+        <Property key="Caption" value="System Settings"/>
+        <Widget type="TabControl" skin="TabControl" position="0 5 440 200" align="HStretch Top">
+            <Widget type="TabItem" skin="" position="2 24 434 172">
+                <Property key="Caption" value="Physical"/>
+                <Widget type="Widget" skin="PanelEmpty" position="5 10 425 30">
+                    <Widget type="TextBox" skin="TextBox" position="95 0 115 30">
+                        <Property key="TextAlign" value="Right VCenter"/>
+                        <Property key="Caption" value="World Size: "/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="215 0 100 30" name="Setting_WorldSize">
+                        <Property key="Caption" value="5000.0"/>
+                        <Property key="TextAlign" value="Left VCenter"/>
+                    </Widget>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="5 50 425 30">
+                    <Widget type="TextBox" skin="TextBox" position="30 0 100 30">
+                        <Property key="Caption" value="Gravity: ( "/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="130 0 60 30" name="Setting_GravX">
+                        <Property key="Caption" value="0.0"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="190 5 10 20">
+                        <Property key="Caption" value=" ,"/>
+                        <Property key="TextAlign" value="Left Bottom"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="280 0 60 30" name="Setting_GravZ">
+                        <Property key="Caption" value="0.0"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="265 5 10 20">
+                        <Property key="Caption" value=" ,"/>
+                        <Property key="TextAlign" value="Left Bottom"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="340 0 10 30">
+                        <Property key="Caption" value=")"/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="210 50 60 30" name="Setting_GravY">
+                    <Property key="Caption" value="-9.81"/>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="5 90 425 30">
+                    <Widget type="ComboBox" skin="ComboBox" position="130 0 210 30" name="Setting_SolverType">
+                        <Property key="AddItem" value="2ITERS_SOFT"/>
+                        <Property key="AddItem" value="2ITERS_MEDIUM"/>
+                        <Property key="AddItem" value="2ITERS_HARD"/>
+                        <Property key="AddItem" value="4ITERS_SOFT"/>
+                        <Property key="AddItem" value="4ITERS_MEDIUM"/>
+                        <Property key="AddItem" value="4ITERS_HARD"/>
+                        <Property key="AddItem" value="8ITERS_SOFT"/>
+                        <Property key="AddItem" value="8ITERS_MEDIUM"/>
+                        <Property key="AddItem" value="8ITERS_HARD"/>
+                        <Property key="ModeDrop" value="true"/>
+                        <Property key="Static" value="true"/>
+                    </Widget>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="30 90 100 30">
+                    <Property key="Caption" value="Solver Type: "/>
+                    <Property key="TextAlign" value="Right VCenter"/>
+                </Widget>
+                <Widget type="Widget" skin="PanelEmpty" position="5 130 425 30">
+                    <Widget type="TextBox" skin="TextBox" position="75 0 135 30">
+                        <Property key="Caption" value="Collision Tolerance: "/>
+                        <Property key="TextAlign" value="Right VCenter"/>
+                    </Widget>
+                    <Widget type="EditBox" skin="EditBox" position="215 0 100 30" name="Setting_ColTolerance">
+                        <Property key="Caption" value="0.05"/>
+                    </Widget>
+                </Widget>
+            </Widget>
+            <Widget type="TabItem" skin="" position="2 24 434 172">
+                <Property key="Caption" value="General"/>
+                <Widget type="Widget" skin="PanelEmpty" position="5 10 425 30">
+                    <Widget type="TextBox" skin="TextBox" position="0 0 270 30">
+                        <Property key="Caption" value="Data Capture Frequency: Once every "/>
+                        <Property key="TextAlign" value="Center"/>
+                    </Widget>
+                    <Widget type="TextBox" skin="TextBox" position="365 0 60 30">
+                        <Property key="Caption" value="frames"/>
+                        <Property key="TextAlign" value="Left VCenter"/>
+                    </Widget>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="275 10 95 30" name="Setting_DataFreq">
+                    <Property key="Caption" value="25"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="Button" skin="Button" position="50 215 120 30" name="Setting_OK">
+            <Property key="Caption" value="OK"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="256 215 120 30" name="Setting_Reset">
+            <Property key="Caption" value="Reset"/>
+        </Widget>
+    </Widget>
+</MyGUI>

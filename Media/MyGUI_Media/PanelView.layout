@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="0 271 250 700" layer="Overlapped" name="_Main">
+        <Property key="Caption" value="Data Center"/>
+        <Property key="MinSize" value="200 150"/>
+        <Property key="Visible" value="false"/>
+        <Widget type="ScrollView" skin="ScrollView" position="2 2 237 660" align="Stretch" name="scroll_View">
+            <Property key="VisibleHScroll" value="false"/>
+        </Widget>
+    </Widget>
+</MyGUI>

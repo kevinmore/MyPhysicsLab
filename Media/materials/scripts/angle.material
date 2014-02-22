@@ -1,0 +1,14 @@
+material BonzeOldxc
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.3846, 0.3438, 0.2716 1
+			diffuse 0.3846, 0.3438, 0.2716 1
+			specular 0.072 0.072 0.072 1 10
+		}
+
+	}
+
+}

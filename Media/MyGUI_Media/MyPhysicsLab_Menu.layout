@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="MenuBar" skin="MenuBar" position="0 0 1920 26" align="Left Top" layer="Overlapped" name="Menu">
+        <Widget type="MenuItem" skin="" position="0 0 41 21">
+            <Property key="Caption" value="File"/>
+            <Property key="MenuItemId" value="File"/>
+            <Property key="MenuItemType" value="Popup"/>
+            <Widget type="PopupMenu" skin="PopupMenu" position="2 26 96 134" style="Popup" layer="Popup">
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 88 19" name="Command_New">
+                    <Property key="Caption" value="New"/>
+                    <Property key="MenuItemId" value="Command_New"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 88 19">
+                    <Property key="Caption" value="Load..."/>
+                    <Property key="MenuItemId" value="Command_FileLoad"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 38 88 19" name="Command_FileSave">
+                    <Property key="Caption" value="Save"/>
+                    <Property key="MenuItemId" value="Command_FileSave"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 57 88 19">
+                    <Property key="Caption" value="Save as"/>
+                    <Property key="MenuItemId" value="Command_FileSaveAs"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 76 88 19" name="Command_Clear">
+                    <Property key="Caption" value="Clear"/>
+                    <Property key="MenuItemId" value="Command_Clear"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuSeparator" position="0 95 88 10">
+                    <Property key="MenuItemType" value="Separator"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 105 88 19" name="Command_Quit">
+                    <Property key="Caption" value="Quit"/>
+                    <Property key="MenuItemId" value="Command_Quit"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="MenuItem" skin="" position="47 0 87 21">
+            <Property key="Caption" value="Simulation"/>
+            <Property key="MenuItemId" value="Simulation"/>
+            <Property key="MenuItemType" value="Popup"/>
+            <Widget type="PopupMenu" skin="PopupMenu" position="49 26 119 77" style="Popup" layer="Popup">
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 111 19" name="Command_Play">
+                    <Property key="Caption" value="Play"/>
+                    <Property key="MenuItemId" value="Command_Play"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 111 19" name="Command_Pause">
+                    <Property key="Caption" value="Pause"/>
+                    <Property key="MenuItemId" value="Command_Pause"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuSeparator" position="0 38 111 10">
+                    <Property key="MenuItemType" value="Separator"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 48 111 19" name="Command_SlowMotion">
+                    <Property key="Caption" value="Slow Motion"/>
+                    <Property key="MenuItemId" value="Command_SlowMotion"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="MenuItem" skin="" position="140 0 66 21">
+            <Property key="Caption" value="Create"/>
+            <Property key="MenuItemId" value="Create"/>
+            <Property key="MenuItemType" value="Popup"/>
+            <Widget type="PopupMenu" skin="PopupMenu" position="142 26 114 29" style="Popup" layer="Popup">
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 106 19" name="Command_RigidBody">
+                    <Property key="Caption" value="Rigid Body"/>
+                    <Property key="MenuItemId" value="Command_RigidBody"/>
+                    <Property key="Enabled" value="false"/>
+                </Widget>
+				<Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 106 19" name="Command_ScreenShot">
+                    <Property key="Caption" value="Screen Shot"/>
+                    <Property key="MenuItemId" value="Command_ScreenShot"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="MenuItem" skin="" position="212 0 66 21">
+            <Property key="Caption" value="Demos"/>
+            <Property key="MenuItemId" value="Demos"/>
+            <Property key="MenuItemType" value="Popup"/>
+            <Widget type="PopupMenu" skin="PopupMenu" position="214 26 176 105" style="Popup" layer="Popup">
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 168 19" name="Command_Scenario1">
+                    <Property key="Caption" value="Brick Wall"/>
+                    <Property key="MenuItemId" value="Command_Scenario1"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 168 19" name="Command_Scenario2">
+                    <Property key="Caption" value="Friction"/>
+                    <Property key="MenuItemId" value="Command_Scenario2"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 38 168 19" name="Command_Scenario3">
+                    <Property key="Caption" value="Gravity Change"/>
+                    <Property key="MenuItemId" value="Command_Scenario3"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 57 168 19" name="Command_Scenario4">
+                    <Property key="Caption" value="Restitution Change"/>
+                    <Property key="MenuItemId" value="Command_Scenario4"/>
+                </Widget>
+       
+				<Widget type="MenuItem" skin="PopupMenuNormal" position="0 76 168 19" name="Command_Scenario6">
+                    <Property key="Caption" value="KeyFraming"/>
+                    <Property key="MenuItemId" value="Command_Scenario6"/>
+                </Widget>
+				<Widget type="MenuItem" skin="PopupMenuNormal" position="0 76 168 19" name="Command_Scenario7">
+                    <Property key="Caption" value="Gravitational Attraction"/>
+                    <Property key="MenuItemId" value="Command_Scenario7"/>
+                </Widget>
+				 <Widget type="MenuItem" skin="PopupMenuNormal" position="0 76 168 19" name="Command_Scenario5">
+                    <Property key="Caption" value="Spring Tension"/>
+                    <Property key="MenuItemId" value="Command_Scenario5"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="MenuItem" skin="" position="284 0 50 21">
+            <Property key="Caption" value="View"/>
+            <Property key="MenuItemId" value="View"/>
+            <Property key="MenuItemType" value="Popup"/>
+            <Widget type="PopupMenu" skin="PopupMenu" position="286 26 157 154" style="Popup" layer="Popup">
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 149 19" name="Camera">
+                    <Property key="Caption" value="Camera"/>
+                    <Property key="MenuItemId" value="Command_Camera"/>
+                    <Property key="MenuItemType" value="Popup"/>
+                    <Widget type="PopupMenu" skin="PopupMenu" position="371 26 173 67" style="Popup" layer="Popup">
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 165 19" name="MainCameraMode">
+                            <Property key="Caption" value="Main Camera Mode"/>
+                            <Property key="MenuItemId" value="Command_MainCameraMode"/>
+                            <Property key="MenuItemType" value="Popup"/>
+                            <Widget type="PopupMenu" skin="PopupMenu" position="544 26 122 48" style="Popup" layer="Popup">
+                                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 114 19" name="Command_MainCameraFreeMode">
+                                    <Property key="Caption" value="Free Mode"/>
+                                    <Property key="MenuItemId" value="Command_MainCameraFreeMode"/>
+                                    <Property key="Enabled" value="false"/>
+                                </Widget>
+                                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 114 19" name="Command_MainCameraPlaneMode">
+                                    <Property key="Caption" value="Plane Mode"/>
+                                    <Property key="MenuItemId" value="Command_MainCameraPlaneMode"/>
+                                </Widget>
+                            </Widget>
+                        </Widget>
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 165 19" name="Command_MiniCameraMode">
+                            <Property key="Caption" value="Mini Camera Mode"/>
+                            <Property key="MenuItemId" value="Command_MiniCameraMode"/>
+                            <Property key="MenuItemType" value="Popup"/>
+                            <Widget type="PopupMenu" skin="PopupMenu" position="0 0 134 48" style="Popup" layer="Popup">
+                                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 126 19" name="Command_MiniCameraSphericMode">
+                                    <Property key="Caption" value="Spheric Mode"/>
+                                    <Property key="MenuItemId" value="Command_MiniCameraSphericMode"/>
+                                </Widget>
+                                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 126 19" name="Command_MiniCameraChaseMode">
+                                    <Property key="Caption" value="Chase Mode"/>
+                                    <Property key="MenuItemId" value="Command_MiniCameraChaseMode"/>
+                                    <Property key="Enabled" value="false"/>
+                                </Widget>
+                            </Widget>
+                        </Widget>
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 38 165 19" name="Command_ResetCamera">
+                            <Property key="Caption" value="Reset Camera"/>
+                            <Property key="MenuItemId" value="Command_ResetCamera"/>
+                        </Widget>
+                    </Widget>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuSeparator" position="0 19 149 10">
+                    <Property key="MenuItemType" value="Separator"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 29 149 19" name="Command_EnableFlyMode">
+                    <Property key="Caption" value="Enable Fly Mode"/>
+                    <Property key="MenuItemId" value="Command_EnableFlyMode"/>
+                    <Property key="Enabled" value="false"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 48 149 19" name="Command_DisableFlyMode">
+                    <Property key="Caption" value="Disable Fly Mode"/>
+                    <Property key="MenuItemId" value="Command_DisableFlyMode"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuSeparator" position="0 67 149 10">
+                    <Property key="MenuItemType" value="Separator"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 77 149 19" name="Command_ShowWorldAxis">
+                    <Property key="Caption" value="Show World Axis"/>
+                    <Property key="MenuItemId" value="Command_ShowWorldAxis"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 96 149 19" name="Command_HideWorldAxis">
+                    <Property key="Caption" value="Hide World Axis"/>
+                    <Property key="MenuItemId" value="Command_HideWorldAxis"/>
+                    <Property key="Enabled" value="false"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuSeparator" position="0 115 149 10">
+                    <Property key="MenuItemType" value="Separator"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 125 149 19" name="PolygonMode">
+                    <Property key="Caption" value="Polygon Mode"/>
+                    <Property key="MenuItemId" value="Command_PolygonMode"/>
+                    <Property key="MenuItemType" value="Popup"/>
+                    <Widget type="PopupMenu" skin="PopupMenu" position="0 0 114 67" style="Popup" layer="Popup">
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 106 19" name="Command_Solid">
+                            <Property key="Caption" value="Solid"/>
+                            <Property key="MenuItemId" value="Command_Solid"/>
+                            <Property key="Enabled" value="false"/>
+                        </Widget>
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 106 19" name="Command_Wireframe">
+                            <Property key="Caption" value="Wireframe"/>
+                            <Property key="MenuItemId" value="Command_Wireframe"/>
+                        </Widget>
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 38 106 19" name="Command_Points">
+                            <Property key="Caption" value="Points"/>
+                            <Property key="MenuItemId" value="Command_Points"/>
+                        </Widget>
+                    </Widget>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="MenuItem" skin="" position="340 0 75 21">
+            <Property key="Caption" value="Settings"/>
+            <Property key="MenuItemId" value="Settings"/>
+            <Property key="MenuItemType" value="Popup"/>
+            <Widget type="PopupMenu" skin="PopupMenu" position="2 26 150 29" style="Popup" layer="Popup">
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 142 19" name="Command_SystemSetting">
+                    <Property key="Caption" value="System Setting"/>
+                    <Property key="MenuItemId" value="Command_SystemSetting"/>
+                </Widget>
+				
+				
+				
+				
+				
+
+				<Widget type="MenuItem" skin="PopupMenuNormal" position="0 125 149 19" name="Video">
+                    <Property key="Caption" value="Video"/>
+                    <Property key="MenuItemId" value="Video"/>
+                    <Property key="MenuItemType" value="Popup"/>
+                    <Widget type="PopupMenu" skin="PopupMenu" position="0 0 114 67" style="Popup" layer="Popup">
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 106 19" name="Command_Window">
+                            <Property key="Caption" value="Window Mode"/>
+                            <Property key="MenuItemId" value="Command_Window"/>
+                        </Widget>
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 106 19" name="Command_FullScreen">
+                            <Property key="Caption" value="Full Screen"/>
+                            <Property key="MenuItemId" value="Command_FullScreen"/>
+                        </Widget>
+                    </Widget>
+                </Widget>
+				
+				
+				 <Widget type="MenuItem" skin="PopupMenuNormal" position="0 125 149 19" name="Theme">
+                    <Property key="Caption" value="Skin Theme"/>
+                    <Property key="MenuItemId" value="Theme"/>
+                    <Property key="MenuItemType" value="Popup"/>
+                    <Widget type="PopupMenu" skin="PopupMenu" position="0 0 114 67" style="Popup" layer="Popup">
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 106 19" name="Command_Theme0">
+                            <Property key="Caption" value="Black Orange"/>
+                            <Property key="MenuItemId" value="Command_Theme0"/>
+                        </Widget>
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 106 19" name="Command_Theme1">
+                            <Property key="Caption" value="Black Blue"/>
+                            <Property key="MenuItemId" value="Command_Theme1"/>
+                        </Widget>
+                        <Widget type="MenuItem" skin="PopupMenuNormal" position="0 38 106 19" name="Command_Theme2">
+                            <Property key="Caption" value="White Blue"/>
+                            <Property key="MenuItemId" value="Command_Theme2"/>
+                        </Widget>
+                    </Widget>
+                </Widget>
+				
+				
+				
+            </Widget>
+        </Widget>
+        <Widget type="MenuItem" skin="" position="421 0 48 21">
+            <Property key="Caption" value="Help"/>
+            <Property key="MenuItemId" value="Help"/>
+            <Property key="MenuItemType" value="Popup"/>
+            <Widget type="PopupMenu" skin="PopupMenu" position="2 26 152 48" style="Popup" layer="Popup">
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 0 144 19" name="Command_Units">
+                    <Property key="Caption" value="Units and Terms"/>
+                    <Property key="MenuItemId" value="Command_Units"/>
+                </Widget>
+                <Widget type="MenuItem" skin="PopupMenuNormal" position="0 19 144 19" name="Command_About">
+                    <Property key="Caption" value="About..."/>
+                    <Property key="MenuItemId" value="Command_About"/>
+                </Widget>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>
