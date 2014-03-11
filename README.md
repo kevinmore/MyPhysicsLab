@@ -1,6 +1,6 @@
 MyPhysicsLab
 ============
-
+![alt text](http://a.fsdn.com/con/app/proj/myphysicslab/screenshots/screenshot03292013_222140279.jpg "Project Anarchy")
 This it the source code for my Final Year Project.<br/>
 Binary version available at: http://sourceforge.net/projects/myphysicslab
 
